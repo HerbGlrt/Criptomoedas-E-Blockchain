@@ -1,0 +1,38 @@
+{
+  "name": "donation-blockchain-system",
+  "version": "1.0.0",
+  "description": "Sistema de Doações Transparente com Blockchain - Ethereum Smart Contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:verbose": "hardhat test --verbose",
+    "test:coverage": "hardhat coverage",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "smart-contract",
+    "solidity",
+    "donation",
+    "transparent",
+    "dapp",
+    "web3"
+  ],
+  "author": "Henrique - USP Blockchain",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "chai": "^4.3.10",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.20.0",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "ethers": "^6.10.0"
+  }
+}
