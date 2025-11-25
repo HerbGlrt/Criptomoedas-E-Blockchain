@@ -132,9 +132,6 @@ contract Donation {
             "O valor do saque deve ser maior que zero"
         );
         
-        // Efeitos: Atualiza estado antes de enviar fundos
-        uint256 previousBalance = address(this).balance;
-        
         // Interações: Envia os fundos de forma segura
         (bool success, ) = payable(owner).call{value: _amount}("");
         require(
